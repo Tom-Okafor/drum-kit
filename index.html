@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Drum Kit</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Arvo"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <main>
+            <h1 id="title">Drum 🥁 Kit</h1>
+            <form id="sequenceForm">
+                <input
+                    type="text"
+                    id="pattern"
+                    name="pattern"
+                    placeholder="type sequence here"
+                />
+                <a id="submit">submit</a>
+            </form>
+            <p>
+                Hi! Welcome to Drum 🥁 Kit! Click on any of the drums to hear
+                their sounds or
+                <a class="anchor" id="playOptions" href="#">click</a> for more
+                options.
+            </p>
+            <div class="set">
+                <button class="w drum" id="tom-1">w</button>
+                <button class="a drum" id="tom-2">a</button>
+                <button class="s drum" id="tom-3">s</button>
+                <button class="d drum" id="tom-4">d</button>
+                <button class="j drum" id="kick-bass">j</button>
+                <button class="k drum" id="snare">k</button>
+                <button class="l drum" id="crash">l</button>
+            </div>
+        </main>
+        <section class="options hideOptions">
+            <h2>Choose One Option!</h2>
+            <button class="optionButton" id="keydown">
+                <p class="major">Play By Keyboard press.</p>
+                <p class="info">
+                    Match the letter on any the drums to the correct letter on
+                    your Keyboard to activate the sound!
+                </p>
+            </button>
+            <button class="optionButton" id="sequence">
+                <p class="major">Play By A Generated Sequence.</p>
+                <p class="info">
+                    Type a random set of letters (each of which must match the
+                    letters on the drum) into an input box and submit to hear
+                    the pattern. You can combine or repeat up to 9 letters but
+                    every inputed letter must be one of the alphabets on the
+                    drums!
+                </p>
+            </button>
+
+            <a href="#" id="cancel">Cancel?</a>
+        </section>
+        <footer>Made with ❤️ in London.</footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,197 @@
+body {
+    text-align: center;
+    background-color: #283149;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #dbedf3;
+    font-family: "Arvo", cursive;
+    text-shadow: 3px 0 #da0463;
+}
+
+p {
+    font-size: 1rem;
+    color: #da0463;
+    font-family: "Courier New";
+    margin-inline: 1rem;
+}
+p > a {
+    color: #dbedf3;
+}
+footer {
+    color: #dbedf3;
+    font-family: sans-serif;
+}
+
+.w {
+    background-image: url("images/tom1.png");
+}
+
+.a {
+    background-image: url("images/tom2.png");
+}
+
+.s {
+    background-image: url("images/tom3.png");
+}
+
+.d {
+    background-image: url("images/tom4.png");
+}
+
+.j {
+    background-image: url("images/kick.png");
+}
+
+.k {
+    background-image: url("images/snare.png");
+}
+
+.l {
+    background-image: url("images/crash.png");
+}
+
+.set {
+    margin: 10% auto;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #dbedf3;
+    opacity: 0.5;
+}
+
+.red {
+    color: red;
+}
+
+.drum {
+    outline: none;
+    border: 10px solid #404b69;
+    font-size: 5rem;
+    font-family: "Arvo", cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #da0463;
+    text-shadow: 3px 0 #dbedf3;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    background-size: cover;
+    background-size: cover;
+}
+
+.optionButton {
+    border: 1.5px solid #da0463;
+    box-shadow: 0 0 5px 3px #aaa;
+    border-radius: 10px;
+    width: clamp(200px, 85vw, 500px);
+    padding: 0 2px;
+    transition: all 300ms ease-in-out;
+}
+.optionButton:first-of-type {
+    margin-bottom: 2rem;
+}
+
+.optionButton:hover {
+    background: #da0463;
+    border: 1.5px solid #dbedf3;
+}
+.optionButton:hover .major {
+    border-bottom: 1px solid #dbedf3;
+}
+.optionButton:hover p {
+    color: #dbedf3;
+}
+.major {
+    border-bottom: 1px solid #da0463;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px 0;
+}
+.info {
+    font-size: 0.9rem;
+}
+
+.main {
+    filter: blur(5px);
+}
+main {
+    transition: filter 500ms ease-in-out;
+}
+.body {
+    overflow-y: hidden;
+}
+.hideOptions {
+    visibility: hidden;
+}
+.options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-content: center;
+    transition: opacity 1000ms ease-out;
+    opacity: 0;
+    background-color: #00000044;
+}
+.options h2 {
+    font-size: 2rem;
+    color: #dbedf3;
+    font-family: "Arvo", cursive;
+    text-shadow: 3px 0 #da0463;
+}
+
+.options a {
+    color: #dbedf3;
+    font-family: Courier;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+form {
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    display: none;
+}
+form input {
+    color: #dbedf3;
+    font-family: Courier New;
+    border: 1.5px solid #da0463;
+    box-shadow: 0 0 1px 0.3px #dbedf3;
+    background: transparent;
+    outline: none;
+    width: clamp(100px, 60vw, 300px);
+    padding: 5px;
+    border-radius: 5px;
+}
+#submit {
+    color: #dbedf3;
+    font-family: Courier New;
+    font-size: 0.9rem;
+    border: 1px solid #da0463;
+    display: grid;
+    place-content: center;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0.3px #dbedf3;
+}
+#submit:hover {
+    outline: 0.3px solid #dbedf3;
+    outline-offset: 5px;
+    padding: 2px;
+}
